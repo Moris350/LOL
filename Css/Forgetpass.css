@@ -1,0 +1,227 @@
+﻿.effect-17 ~ .focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #6001D2;
+    transition: 0.4s;
+}
+
+.effect-17:focus ~ .focus-border,
+.has-content.effect-17 ~ .focus-border {
+    width: 100%;
+    transition: 0.4s;
+    left: 0;
+}
+
+.effect-17 ~ label {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 9px;
+    color: #aaa;
+    transition: 0.3s;
+    z-index: -1;
+    letter-spacing: 0.5px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.effect-17:focus ~ label, .has-content.effect-17 ~ label {
+    top: -16px;
+    font-size: 12px;
+    color: #6001D2;
+    transition: 0.3s;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Damion|Muli:400,600');
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Damion|Muli:400,600');
+
+
+
+h2 {
+    font-family: 'Damion', cursive;
+    font-weight: 400;
+    color: #4caf50;
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+}
+
+    h2:before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        left: 0;
+        top: 22px;
+        background: #4caf50;
+        height: 1px;
+    }
+
+    h2 i {
+        font-style: normal;
+        background: #fff;
+        position: relative;
+        padding: 10px;
+    }
+
+:focus {
+    outline: none;
+}
+
+/* necessary to give position: relative to parent. */
+input[type="text"] {
+    font: 15px/24px 'helvetica', sans-serif;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    background: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #d8dade;
+}
+
+:focus {
+    outline: none;
+}
+
+.col-3 {
+    float: left;
+    width: 27.33%;
+    margin: 40px 3%;
+    position: relative;
+    background: none;
+}
+/* necessary to give position: relative to parent. */
+input[type="email"] {
+    text-align: right;
+    font: 15px/24px "helvetica", Arial, sans-serif;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    background: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #d8dade;
+}
+
+
+
+.Div {
+    visibility: visible;
+    position: relative;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 30%);
+    z-index: 3;
+    background: white;
+    left: 40%;
+    top: 15%;
+    height: 575px;
+    width:22.5%;
+}
+
+.intoaccount {
+    color: #26282a;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:20px;
+}
+
+.intoaccount2 {
+    color: #26282a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    left:9%;
+    position:relative
+}
+
+.continuePass {
+    background-color: #188fff;
+    border-radius: 1.17647rem;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #188fff;
+    width: 80%;
+    height: 43px;
+    cursor: pointer;
+}
+.continuePass:hover{
+
+}
+
+
+.Titel {
+    position: relative;
+    top: 7px;
+    left: 18px;
+    color: black;
+    font-weight:900;
+}
+#Icon {
+    top: 12px;
+    left: 20px;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#bck {
+    display: flex;
+    height: 3.5em;
+    width: 160%;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    background: #fff;
+    color: #6001D2;
+    font-weight: 900;
+    border-radius: 15px;
+}
+
+    #bck > svg {
+        margin-right: 5px;
+        margin-left: 5px;
+        font-size: 20px;
+        transition: all 0.4s ease-in;
+        color: #6001D2;
+    }
+
+    #bck:hover > svg {
+        font-size: 1.2em;
+        transform: translateX(-5px);
+        color: #6001D2;
+    }
+
+    #bck:hover {
+        box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+        transform: translateY(-2px);
+    }

@@ -1,0 +1,366 @@
+﻿#Search {
+    text-align: left;
+}
+.Hide {
+    visibility: hidden;
+}
+
+.showDiv {
+    visibility: visible;
+    position: absolute;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+    z-index: 8;
+    border-radius: 15px;
+    background: white;
+    border: 3px solid #e0e4e9;
+    left: 30px;
+    transition: all 200ms linear;
+}
+
+.pointer {
+    height: 60px;
+    width: 60px;
+    background: white;
+    transform: rotate(45deg);
+    border-radius: 0 0 12px 0;
+    margin-top: -22px;
+    position: relative;
+    left: calc(0.5vw - 50px);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+    z-index: 8;
+    border: 3px solid #e0e4e9;
+    border-top-color: none;
+    visibility: visible;
+}
+
+.Favorite {
+    background-image: url('../Images/Star-Black.png');
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 27px;
+    background-position-x: 4%;
+    background-position-y: 46%;
+    border: 1px solid #0f69ff;
+    font-size: 20px;
+    color: #51585e;
+    position: absolute;
+    cursor: pointer;
+    left: 110px;
+    top: 180px;
+    width: 250px;
+    height: 50px;
+}
+
+    .Favorite:hover {
+        background-image: url('../Images/Star White.png');
+        background-repeat: no-repeat;
+        background-color: #0f69ff;
+        color: white;
+    }
+
+.Add {
+    border: hidden;
+    backface-visibility: hidden;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: #0F69FF;
+    font-size: 20px;
+    Width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    height:95%;
+}
+
+
+
+.effect-17 ~ .focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #6001D2;
+    transition: 0.4s;
+}
+
+.effect-17:focus ~ .focus-border,
+.has-content.effect-17 ~ .focus-border {
+    width: 100%;
+    transition: 0.4s;
+    left: 0;
+}
+
+.effect-17 ~ label {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 9px;
+    color: #aaa;
+    transition: 0.3s;
+    z-index: -1;
+    letter-spacing: 0.5px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.effect-17:focus ~ label, .has-content.effect-17 ~ label {
+    top: -16px;
+    font-size: 12px;
+    color: #6001D2;
+    transition: 0.3s;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Damion|Muli:400,600');
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Damion|Muli:400,600');
+
+
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #4caf50;
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+}
+
+    h2:before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        left: 0;
+        top: 22px;
+        background: #4caf50;
+        height: 1px;
+    }
+
+    h2 i {
+        font-style: normal;
+        background: #fff;
+        position: relative;
+        padding: 10px;
+    }
+
+:focus {
+    outline: none;
+}
+
+/* necessary to give position: relative to parent. */
+input[type="text"] {
+    font: 15px/24px "helvetica", Arial, sans-serif;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    background: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #333;
+}
+input[type="search"] {
+    font: 15px/24px "helvetica", Arial, sans-serif;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    background: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #333;
+}
+
+:focus {
+    outline: none;
+}
+
+.col-3 {
+    float: left;
+    width: 27.33%;
+    margin: 40px 3%;
+    position: relative;
+    background: none;
+}
+/* necessary to give position: relative to parent. */
+input[type="text"] {
+    text-align: right;
+    font: 15px/24px "helvetica", Arial, sans-serif;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    background: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+details {
+    position: relative;
+    width: 300px;
+    margin-right: 1rem;
+}
+
+    details[open] {
+        z-index: 1;
+    }
+
+summary {
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #ddd;
+    list-style: none;
+}
+
+
+
+details[open] summary:before {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+summary:after {
+    content: '';
+    display: inline-block;
+    float: right;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-bottom: 1px solid currentColor;
+    border-left: 1px solid currentColor;
+    border-bottom-left-radius: 2px;
+    transform: rotate(45deg) translate(50%, 0%);
+    transform-origin: center center;
+    transition: transform ease-in-out 100ms
+}
+
+summary:focus {
+    outline: none;
+}
+
+details[open] summary:after {
+    transform: rotate(-45deg) translate(0%, 0%);
+}
+marker{
+    display:none;
+}
+ul {
+    width: 100%;
+    background: #ddd;
+    position: absolute;
+    top: calc(100% + .5rem);
+    left: 0;
+    padding: 1rem;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 148%;
+    list-style-type: none;
+}
+
+li {
+    margin: 0;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
+}
+
+    li:first-child {
+        padding-top: 0;
+    }
+
+    li:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+/* FAKE SELECT */
+
+summary.radios {
+    counter-reset: radios;
+}
+
+input[type=radio] {
+    counter-increment: radios;
+    appearance: none;
+    display: none;
+}
+
+    input[type=radio]:checked {
+        display: inline;
+    }
+
+    input[type=radio]:after {
+        content: attr(title);
+        display: inline;
+        font-size: 1rem;
+    }
+
+ul.list {
+    counter-reset: labels;
+}
+
+label {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+
+.Catagories {
+    width: 60%;
+    height: 15%;
+    font-size: 15px;
+    margin-left: 8%;
+    border: 1px solid #cccccc;
+    font-family: sans-serif;
+    border-radius: 8px;
+    color: #6e7780;
+    cursor: pointer;
+    font-weight:bold;
+}
+    .Catagories:focus {
+        border: 1px solid #6001D2;
+        color: #6001D2
+    }
+
+option {
+    width: 60%;
+    height: 15%;
+    font-size: 15px;
+    margin-left: 8%;
+    border: 1px solid #cccccc;
+    font-family: sans-serif;
+    border-radius: 8px;
+    color: #6e7780;
+    cursor: pointer;
+}

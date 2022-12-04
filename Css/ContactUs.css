@@ -1,0 +1,498 @@
+﻿body {
+}
+.Welcome {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: black;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+}
+
+.Welcome2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+
+}
+
+
+*, *:before, *:after {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+
+}
+
+
+
+
+
+
+.background {
+    display: flex;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 10px;
+}
+
+.screen {
+    position: relative;
+    background: #3e3e3e;
+    border-radius: 15px;
+    background-color:white
+}
+
+    .screen:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        right: 20px;
+        bottom: 0;
+        border-radius: 15px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+        z-index: -1;
+    }
+
+.screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #6001D2;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.screen-header-left {
+    margin-right: auto;
+}
+
+.screen-header-button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background: white;
+}
+
+    .screen-header-button.close {
+        background: white;
+    }
+
+    .screen-header-button.maximize {
+        background: white;
+    }
+
+    .screen-header-button.minimize {
+        background: white;
+    }
+
+.screen-header-right {
+    display: flex;
+}
+
+.screen-header-ellipsis {
+    width: 3px;
+    height: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: #999;
+}
+
+.screen-body {
+    display: flex;
+    height:90%
+}
+
+.screen-body-item {
+    flex: 1;
+}
+
+    .screen-body-item.left {
+        display: flex;
+        flex-direction: column;
+    }
+
+.app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #6001D2;
+    font-size: 30px;
+    top: 10%;
+    left: 10%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+
+}
+
+    .app-title:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 25px;
+        height: 4px;
+        background: #6001D2;
+    }
+
+.app-contact {
+    margin-top: auto;
+    font-size: 8px;
+    color: #888;
+}
+
+.app-form-group {
+    margin-bottom: 15px;
+}
+
+    .app-form-group.message {
+        margin-top: 40px;
+    }
+
+    .app-form-group.buttons {
+        margin-bottom: 0;
+        text-align: right;
+    }
+
+
+
+.app-form-button {
+    background: none;
+    border: none;
+    color: #6001D2;
+    font-size: 17px;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    width: 30%;
+    position: relative;
+    display: inline-block;
+}
+
+    .app-form-button:hover {
+        color: white;
+        backface-visibility: visible;
+        background-color: #6001D2;
+        transition: 0.75s;
+        border-radius:10px;
+    }
+
+
+.dribbble {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+@media screen and (max-width: 520px) {
+    .screen-body {
+        flex-direction: column;
+    }
+
+    .screen-body-item.left {
+        margin-bottom: 30px;
+    }
+
+    .app-title {
+        flex-direction: row;
+    }
+
+        .app-title span {
+            margin-right: 12px;
+        }
+
+        .app-title:after {
+            display: none;
+        }
+}
+
+@media screen and (max-width: 600px) {
+    .screen-body {
+        padding: 40px;
+    }
+
+    .screen-body-item {
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
+
+/*input Css*/
+
+
+
+
+/*css textarea*/
+.effect-17-2 ~ .focus-border2 {
+    position: absolute;
+    bottom: 3%;
+    left: 100%;
+    width: 2px;
+    height: 0;
+    background-color: #6001D2;
+    transition: 0.4s;
+}
+
+.effect-17-2:focus ~ .focus-border2,
+.has-content.effect-17-2 ~ .focus-border2 {
+    height: 94%;
+    transition: 0.4s;
+    left: 100%;
+}
+
+
+
+
+
+
+.effect-17-2 ~ .focus-border3 {
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    height: 0;
+    width: 2px;
+    background-color: #6001D2;
+    transition: 0.4s;
+}
+
+.effect-17-2:focus ~ .focus-border3,
+.has-content.effect-17-2 ~ .focus-border3 {
+    height: 94%;
+    transition: 0.4s;
+    left: 0;
+}
+
+
+
+
+
+.effect-17-2 ~ .focus-border4 {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #6001D2;
+    transition: 0.4s;
+}
+
+.effect-17-2:focus ~ .focus-border4,
+.has-content.effect-17-2 ~ .focus-border4 {
+    width: 100%;
+    transition: 0.4s;
+    left: 0;
+}
+
+
+
+
+
+.effect-17-2 ~ .focus-border {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #6001D2;
+    transition: 0.4s;
+}
+
+.effect-17-2:focus ~ .focus-border,
+.has-content.effect-17-2 ~ .focus-border {
+    width: 100%;
+    transition: 0.4s;
+    left: 0;
+}
+
+
+
+
+
+
+.effect-17-2 ~ label {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    color: #6001D2;
+    transition: 0.3s;
+    letter-spacing: 0.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+    top: 5%;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    font-family: 'Montserrat',
+}
+
+.effect-17-2:focus ~ label, .has-content.effect-17-2 ~ label {
+    top: -16px;
+    font-size: 12px;
+    color: #6001D2;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.effect-17 ~ .focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #6001D2;
+    transition: 0.4s;
+}
+
+.effect-17:focus ~ .focus-border,
+.has-content.effect-17 ~ .focus-border {
+    width: 100%;
+    transition: 0.4s;
+    left: 0;
+}
+
+.effect-17 ~ label {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    color: #6001D2;
+    transition: 0.3s;
+    letter-spacing: 0.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+    top: 5%;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    font-family: 'Montserrat',
+}
+
+.effect-17:focus ~ label, .has-content.effect-17 ~ label {
+    top: -16px;
+    font-size: 12px;
+    color: #6001D2;
+    transition: 0.3s;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Damion|Muli:400,600');
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Damion|Muli:400,600');
+
+
+
+h2 {
+    font-family: 'Damion', cursive;
+    font-weight: 400;
+    color: #4caf50;
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+}
+
+    h2:before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        left: 0;
+        top: 22px;
+        background: #4caf50;
+        height: 1px;
+    }
+
+    h2 i {
+        font-style: normal;
+        background: #fff;
+        position: relative;
+        padding: 10px;
+    }
+
+:focus {
+    outline: none;
+}
+
+/* necessary to give position: relative to parent. */
+.inputs {
+    font: 15px/24px 'helvetica', sans-serif;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    background: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #cccccc;
+    text-transform: uppercase;
+}
+
+:focus {
+    outline: none;
+}
+
+.col-3 {
+    float: left;
+    width: 85%;
+    margin: 4%;
+    position: relative;
+    background: none;
+}
+/* necessary to give position: relative to parent. */
+input[type="email"] {
+    text-align: right;
+    font: 15px/24px "helvetica", Arial, sans-serif;
+    color: #333;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    background: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #cccccc;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+textarea {
+    text-align: right;
+    font: 15px/24px "helvetica", Arial, sans-serif;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    background: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #cccccc;
+    text-transform: uppercase;
+}

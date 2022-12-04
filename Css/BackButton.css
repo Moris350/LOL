@@ -1,0 +1,37 @@
+﻿.bck {
+    display: flex;
+    height: 3.5em;
+    width: 160%;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    background: #fff;
+    color: #6001D2;
+    font-weight: 900;
+    border-radius: 15px;
+}
+
+    .bck > svg {
+        margin-right: 5px;
+        margin-left: 5px;
+        font-size: 20px;
+        transition: all 0.4s ease-in;
+        color: #6001D2;
+    }
+
+    .bck:hover > svg {
+        font-size: 1.2em;
+        transform: translateX(-5px);
+        color: #6001D2;
+    }
+
+    .bck:hover {
+        box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+        transform: translateY(-2px);
+    }
