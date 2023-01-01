@@ -1,0 +1,19 @@
+.cards {
+    position: absolute;
+    box-sizing: border-box;
+    box-shadow: 0 0 6px rgb(0 0 0 / 20%), 0 6px 6px rgb(0 0 0 / 15%);
+    border-radius: 8px;
+    background-color: #6001D2;
+    cursor: pointer;
+	height:80%;
+	width:22.5%;
+	left:5%;
+	top:5%;
+    transition: transform 0.45s ease, background 0.45s ease;
+}
+
+    .cards:hover {
+        transform: translateY(-2px);
+        font-size:17px;
+        transform:scale(1.015);
+    }
