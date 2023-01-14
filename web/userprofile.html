@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="userprofile.css">
+	<link rel="stylesheet" href="homepage2.css">
+</head>
+<body>
+    <!-------------------------------------------------------------------------------------------------- Masterpage! --------------------------------------------------------------------------------------------------------------------------------->
+    <div class="auto-style7">
+        <div id="Header" class="Banner sticky" style="left: 0px">
+            <img class="icon" src="Images/Icon.png">
+            <input id="search" placeholder="Search..">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+            <div class="dropdown3 dropbtn3" style="height: 90%;width: 10%;">
+                <label id="UserName" class="dropbtn3 dropdown3" style="font-family: Arial, Helvetica, sans-serif;font-size: 25px;position: static;cursor: pointer; font-weight: bold;" >Segev350</label>
+                <div class="dropdown-content2 ">
+                    <div class="dropdown-content3">
+                        <div>
+                            <lable id="Label1" style="font-family: Arial, Helvetica, sans-serif;font-size: 17px;color: #26282a ;position: absolute;margin-top: 25px;left: 90px;"></lable>
+                            <lable id="Label1" style="font-family: Arial, Helvetica, sans-serif;font-size: 17px;color: #767d84!important;margin-top: 55px;position: absolute;left: 90px;"></lable>
+                            <img id="image2" style="border-radius: 47%;width: 45px;height:45px;position: absolute;margin-top: 27px;left: 34px; border: 1px solid #cccccc">
+                            <button id="LinkButton1" onclick="account_info()" class="account">Acount Info</button>                                  
+                        </div>
+                        <button onclick="account_info()" id="Button1" class="Manage" style="width:100%; bottom:0;">&emsp;&emsp;&emsp;&emsp;&emsp;Manage Your Account</button>
+                        <button onclick="signout()" id="Button2" class="LogOut" style="width:100%;bottom:0;">&emsp;&emsp;&emsp;&emsp;&emsp;Sign Out</button>
+                    </div>
+                </div>
+            </div>      
+                        <!-- <asp:ImageButton ID="ImageButton1" ImageUrl="~/Images/home.png" runat="server" CssClass="HomeButton" style="left: 86.5%;top: 45%;width: 48px;height: 48px;" OnClick="ImageButton1_Click" />
+                        <asp:ImageButton ID="ImageButton4" ImageUrl="~/Images/icons8-mail-48.png" runat="server" CssClass="HomeButton" style="left: 91.5%;top: 48.4%;width: 48px;height: 48px;" OnClick="ImageButton2_Click" />
+                        <br /> -->
+        </div>
+    </div>
+    <div id="disapear" class="banner_content" >
+        <button onclick="home()" class="Navi">Home</button>
+        <button class="Navi"></button>
+        <button class="Navi"></button>
+        <button class="Navi"></button>
+        <button onclick="contact_us()" class="Navi">Contact us</button>
+        <button onclick="about_us()" class="Navi">About us</button>
+    </div>
+    <!-------------------------------------------------------------------------------------------------- Masterpage! --------------------------------------------------------------------------------------------------------------------------------->
+    <div style="left:0; top:200px; height:600px; width:100%; position:absolute">
+        <div style="width:85%; top:0; border-bottom:1px solid #cccccc; position:absolute; left:10%; height:60px ">
+            <label id="label1" runat="server" text="Personal info" cssclass="personalinfo"></label>
+            <button id="Edit" class="Add Lefter" runat="server" onclick="disabling">Edit</button>
+            <button ID="Saving" runat="server"  Text="Save"  Cssclass="Add" OnClick="SavingChanges"  style="left:70%"></button>
+        </div>
+        <img ID="Image1" runat="server" CssClass="img2" style="height:90px;"/>
+        <div style="width:85%; top:20%;  position:absolute; left:20%; height:60px ">        
+            <span class="btn btn-primary btn-file" style="left: 2.5%;border-color:#0F69FF !important; background-color:#0F69FF !important; font-weight:bold; font-size:15px;border-radius: 10px;">
+            Change Profile Photo
+                <input id="imageUser" class="" type="file"  runat="server" placeholder=""  style="top: 35%; left: 10%;height:40px;position:absolute"/>    
+            </span>
+        </div>
+        <button ID="Button1" class="submiting" runat="server" Text="Submit" OnClick="Submiting"></button>
+        <div style="top: 35%;width: 50%;left: 6%;position: absolute;height: 500px;">
+            <div class="col-3 input-effect" style="height: 40px; left: 5%; top: 50px; width: 75%;">
+                <input class="effect-17" type="text"  runat="server" id="FirstName"  placeholder="" style="height:40px;top:0px" disabled="disabled" required="required"  />
+                <label>First Name</label>
+                <span class="focus-border"></span>
+            </div>
+            <div class="col-3 input-effect" runat="server" style="height: 40px; left: 5%; top: 50px; width: 75%;">
+                <input class="effect-17"  id="LastName"   runat="server" type="text"  value="3" placeholder="" style="height:40px;top:0px"  disabled="disabled" required="required"  />
+                <label>Last Name</label>
+                <span class="focus-border"></span>
+            </div>
+            <div class="col-3 input-effect" runat="server" style="height: 40px; left: 5%; top: 50px; width: 75%;">
+                <input class="effect-17"  id="UserPassword2"   runat="server"  type="text" placeholder="" style="height:40px;top:0px" disabled="disabled" required="required"  />
+                <label>Password</label>
+                <span class="focus-border"></span>
+            </div>
+            <div class="col-3 input-effect" runat="server" style="height: 40px;left: 95%;top: -62%;width: 75%;">
+                <input class="effect-17" id="UserID"   runat="server" type="text" placeholder="" style="height:40px;top:0px"  disabled="disabled" required="required"  />
+                <label>User ID</label>
+                <span class="focus-border"></span>
+            </div>
+            <div class="col-3 input-effect" runat="server" style="height: 40px;left: 95%;top: -62%;width: 75%;">
+                <input class="effect-17" id="Email" type="email"    runat="server"  placeholder="" style="height:40px;top:0px" disabled="disabled" required="required" />
+                <label>Email</label>
+                <span class="focus-border"></span>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="Masterpage.js"></script>
+</html>

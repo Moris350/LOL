@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    /* @font-face {
+        font-family: Bungee;
+        src: url(https://fonts.google.com/specimen/Bungee);
+    }
+    .triangle{
+        background-color: #fff;
+        background-clip: border-box;
+        -webkit-text-fill-color: inherit;
+        display:block;
+        justify-content:center;
+        top:50%;
+        background-image: url(https://assets-global.website-files.com/62b4f04befbe455f681f5197/62b4f04befbe453e451f51ee_yahoo-triangle.svg);
+        background-position: 100% 100%;
+        background-size: 30vw;
+        height: auto;
+        min-height: 90vh;
+        width:100%;
+        position: relative;
+        background-repeat: no-repeat;
+    } */
+    html, body, #container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#myChart{
+    width: 60%;
+    height: 40%;
+}
+.container{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <canvas id="myChart"></canvas>
+    </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
+      <script>
+        const ctx = document.getElementById('myChart');
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': 'ca0640f6d1msh6b5a34a7fc37743p1278cejsn0c62a418849c',
+                'X-RapidAPI-Host': 'twelve-data1.p.rapidapi.com'
+            }
+        };
+        let data_api;
+        fetch('https://twelve-data1.p.rapidapi.com/time_series?symbol=AMZN&interval=1day&outputsize=30&format=json', options)
+            .then(data => {
+                data_api = data;
+                return data_api.json();
+            })
+            .then(data_api => console.log(data_api))
+            .catch(err => console.error(err));
+
+        console.log(data_api.values.datetime[0])
+        new Chart(ctx, {  
+          type: 'line',
+          data: {
+            labels: [ 'wad', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+              label: '# of Votes',
+              data: [12, 19, 3, 5, 2, 3],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      </script>
+</html>

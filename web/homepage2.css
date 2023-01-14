@@ -1,0 +1,314 @@
+.Banner {
+    background-color: #f9f9fa;
+    height: 108px;
+    box-shadow: -2px 3px 7px;
+    position: absolute;
+    width: 100%;
+    left:0;
+    top:0;
+}
+
+.banner_content {
+    width:100%;
+    background-color: #f9f9fa;
+    box-shadow: -2px 3px 7px;
+    height: 70px;
+    z-index: 5;
+    left:0;
+    text-emphasis-position:left;
+    top:0;
+}
+#Icon {
+    top: 12px;
+    left: 20px;
+    position: relative;
+}
+
+.Title {
+    position: relative;
+    top: 7px;
+    left: 18px;
+    font-weight: 900;
+}
+.sticky {
+    display: block;
+    position: fixed;
+    top: -10px;
+    width: 100%;
+    left: 0px;
+    height: 100px;
+    background-color: white;
+    z-index: 10;
+}
+
+#disapear {
+    position: fixed;
+    top: 67px;
+    width: 100%;
+    display: block;
+    transition: top 0.5s;
+    left: 0px;
+    height: 70px;
+    z-index:9;
+}
+
+#disapear {
+    float: left;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#Label3 {
+    text-shadow: -2px 3px 7px;
+}
+
+
+
+.auto-style3 {
+    height: 273px;
+}
+
+#UserName {
+    color: #6001D2;
+    display: block;
+    position: absolute;
+}
+
+#PortFoliosPresent {
+    height: 51px;
+}
+
+#search {
+    position: relative;
+    width: 170px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 22px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.85s;
+    transition: 0.85s;
+    outline: none;
+    left: 30%;
+    top: -30%;
+    background-image: url('../Images/SearchPurple.png');
+}
+
+    #search:focus {
+        border: 3px solid #6001D2;
+        width: 30%;
+    }
+
+.Navi {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    border: none;
+    padding: 0px 1.5rem;
+    margin: 0 -.25rem;
+    background: none;
+    top: 75%;
+    left: 0px;
+    cursor: pointer;
+    color: #070f6c;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    .Navi:hover {
+        transition: 0.15s;
+        border-bottom: 7px solid #0F69FF;
+    }
+
+.dropdown_content {
+    padding:10px;
+    display: none;
+    pointer-events:none;
+}
+
+.dropdown:focus-within .dropdown_content {
+    display: inline-block;
+    pointer-events:auto;
+}
+
+.ButtonDis {
+    color: #9299a1;
+}
+
+#NamesOfPortFolio{
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    position:inherit;
+    margin-left: 0px;
+}
+
+
+.HomeButton{
+    position:absolute;
+    border:none;
+}
+#ProfileImage {
+    position: absolute;
+    border-radius: 10px;
+    height: 70px;
+    width: 70px;
+}
+.SearchButton{
+    visibility:hidden;
+    display:none;
+}
+
+
+
+
+
+
+.dropbtn3 {
+    border: none;
+    width: 205px;
+    top: 60%;
+    left: 77%;
+    cursor: pointer;
+    color: #6001D2;
+    position:absolute;
+    z-index: 10;
+}
+
+.dropdown3 {
+    position: absolute;
+    display: inline-block;
+    z-index: 10;
+}
+
+.dropdown-content3 {
+    display: none;
+    position: absolute;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+    z-index: 10;
+    border-radius: 15px;
+    background: white;
+    border: 1px solid #e0e4e9;
+    width: 500px;
+    left: -50%;
+    top: 110%;
+    height: 250px;
+    
+}
+
+.dropdown-content2 {
+    display: none;
+    height: 20px;
+    width: 500px;
+    z-index: 10;
+    position: absolute;
+    top: 30%;
+    left: 65%;
+}
+
+
+.dropdown3:hover .dropdown-content3 {
+    display: block;
+}
+
+.dropdown3:hover .dropdown-content2 {
+    display: block;
+}
+
+
+
+.loGAndManage {
+    position: absolute;
+    display: inline-block;
+}
+
+.LogOut {
+    background-repeat: no-repeat;
+    background-image: url('Images/logout (1).png');
+    background-position-x: 5%;
+    background-position-y: 50%;
+    background-color: white;
+    text-align: left;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    height: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+    border-bottom: 1px solid #cccccc;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+    .LogOut:hover {
+        background-color: #e0f0ff;
+    }
+
+.Manage {
+    background-image: url('Images/plus (1).png');
+    background-position-x: 5%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    text-align: left;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    height: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+    background-color: white;
+    margin-top: 131px;
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+}
+
+    .Manage:hover {
+        background-color: #e0f0ff;
+    }
+
+.icon {
+    height: 70px;
+    top: 20%;
+    position: relative;
+    display: block;
+    left: 2.5%;
+}
+
+
+.displayingblock{
+    visibility:visible;
+}
+.account{
+   text-decoration: none;
+   color: #26282a;
+   font-size: 15px;
+   position: absolute;
+   font-family: Arial, Helvetica, sans-serif;
+   left: 90px;
+   margin-top: 90px;
+   background-color: white;
+   border: none;
+   cursor: pointer;
+}
+.account:hover{
+    color:#0F69FF;
+}
+
+
+
+
+p {
+    margin: 0;
+  }
+  
+  #open, #high, #low, #close, #volume {
+    font-weight: bold;
+  }

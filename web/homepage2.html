@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="homepage2.css">
+
+</head>
+<body>
+    <!-------------------------------------------------------------------------------------------------- Masterpage! --------------------------------------------------------------------------------------------------------------------------------->
+    <div class="auto-style7">
+        <div id="Header" class="Banner sticky" style="left: 0px">
+            <img class="icon" src="Images/Icon.png">
+            <input id="search" placeholder="Search..">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+            <div class="dropdown3 dropbtn3" style="height: 90%;width: 10%;">
+                <label id="UserName" class="dropbtn3 dropdown3" style="font-family: Arial, Helvetica, sans-serif;font-size: 25px;position: static;cursor: pointer; font-weight: bold;" >Segev350</label>
+                <div class="dropdown-content2 ">
+                    <div class="dropdown-content3">
+                        <div>
+                            <lable id="Label1" style="font-family: Arial, Helvetica, sans-serif;font-size: 17px;color: #26282a ;position: absolute;margin-top: 25px;left: 90px;"></lable>
+                            <lable id="Label1" style="font-family: Arial, Helvetica, sans-serif;font-size: 17px;color: #767d84!important;margin-top: 55px;position: absolute;left: 90px;"></lable>
+                            <img id="image2" style="border-radius: 47%;width: 45px;height:45px;position: absolute;margin-top: 27px;left: 34px; border: 1px solid #cccccc">
+                            <button id="LinkButton1" onclick="account_info()" class="account">Acount Info</button>                                  
+                        </div>
+                        <button onclick="account_info()" id="Button1" class="Manage" style="width:100%; bottom:0;">&emsp;&emsp;&emsp;&emsp;&emsp;Manage Your Account</button>
+                        <button onclick="signout()" id="Button2" class="LogOut" style="width:100%;bottom:0;">&emsp;&emsp;&emsp;&emsp;&emsp;Sign Out</button>
+                    </div>
+                </div>
+            </div>      
+                        <!-- <asp:ImageButton ID="ImageButton1" ImageUrl="~/Images/home.png" runat="server" CssClass="HomeButton" style="left: 86.5%;top: 45%;width: 48px;height: 48px;" OnClick="ImageButton1_Click" />
+                        <asp:ImageButton ID="ImageButton4" ImageUrl="~/Images/icons8-mail-48.png" runat="server" CssClass="HomeButton" style="left: 91.5%;top: 48.4%;width: 48px;height: 48px;" OnClick="ImageButton2_Click" />
+                        <br /> -->
+        </div>
+    </div>
+    <div id="disapear" class="banner_content" >
+        <button onclick="home()" class="Navi">Home</button>
+        <button class="Navi"></button>
+        <button class="Navi"></button>
+        <button class="Navi"></button>
+        <button onclick="contact_us()" class="Navi">Contact us</button>
+        <button onclick="about_us()" class="Navi">About us</button>
+    </div>
+    <!-------------------------------------------------------------------------------------------------- Masterpage! --------------------------------------------------------------------------------------------------------------------------------->
+    <div style="padding: 10px;border: 1px solid #ccc;position: absolute; top:40%">
+        <p>Open: <span id="open">144.8400</span></p>
+        <p>High: <span id="high">144.8400</span></p>
+        <p>Low: <span id="low">144.8400</span></p>
+        <p>Close: <span id="close">144.8400</span></p>
+        <p>Volume: <span id="volume">170</span></p>
+      </div>
+      <div id="container"></div>
+    <div style="display: block;height: 2000px;z-index: 0;"> </div>
+</body>
+
+
+
+
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("disapear").style.top = "65px";
+        } else {
+            document.getElementById("disapear").style.top = "-50px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+</script>
+
+
+
+
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+    <script src="homepage.js"></script>
+    <script src="Masterpage.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
